@@ -6,6 +6,14 @@ Python (FastAPI) backend, Next.js (TypeScript) front end. It works with Claude o
 
 The sample knowledge base is a set of help docs for **Fernhill Cloud, a fictional company** written for this demo. Drop your own markdown files into `docs/` to use it on real content.
 
+## Screenshots
+
+An answer with the cited passage opened, then an honest refusal when the docs have nothing relevant. These were taken in offline mode (no API key), where answers quote the docs directly. With a key set, the same screen shows a written answer.
+
+![Answer with cited sources](assets/screenshots/answer-with-sources.png)
+
+![Refusing to guess](assets/screenshots/refuses-to-guess.png)
+
 ## What it does
 
 - Searches the docs with BM25 and passes only the relevant passages to the model

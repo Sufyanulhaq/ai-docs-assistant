@@ -33,4 +33,4 @@ Every request carries a Fernhill-Signature header that looks like t=1700000000,v
 3. Compare the result with v1 using a constant time comparison.
 4. Reject the request if t is more than 5 minutes old.
 
-Always use the raw body. If your framework parses the JSON first and you re serialise it, the signature will not match.
+Always use the raw body. If your framework parses the JSON first and you then rebuild the body from it, the signature will not match.
